@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Sample test Suite" duration-ms="14300" started-at="2020-11-23T16:11:11 IST" finished-at="2020-11-23T16:11:25 IST">
+    <groups>
+    </groups>
+    <test name="Sample test" duration-ms="14300" started-at="2020-11-23T16:11:11 IST" finished-at="2020-11-23T16:11:25 IST">
+      <class name="oracle.assignment.test.OracleAssignment">
+        <test-method status="PASS" signature="setUpReporting()[pri:0, instance:oracle.assignment.test.OracleAssignment@2781e022]" name="setUpReporting" is-config="true" duration-ms="172" started-at="2020-11-23T16:11:11 IST" finished-at="2020-11-23T16:11:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReporting -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:oracle.assignment.test.OracleAssignment@2781e022]" name="setUp" is-config="true" duration-ms="6694" started-at="2020-11-23T16:11:11 IST" finished-at="2020-11-23T16:11:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyFooterLayout()[pri:0, instance:oracle.assignment.test.OracleAssignment@2781e022]" name="verifyFooterLayout" duration-ms="4326" started-at="2020-11-23T16:11:18 IST" finished-at="2020-11-23T16:11:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFooterLayout -->
+        <test-method status="PASS" signature="verifyHeaderLayout()[pri:0, instance:oracle.assignment.test.OracleAssignment@2781e022]" name="verifyHeaderLayout" duration-ms="2566" started-at="2020-11-23T16:11:22 IST" finished-at="2020-11-23T16:11:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHeaderLayout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:oracle.assignment.test.OracleAssignment@2781e022]" name="tearDown" is-config="true" duration-ms="671" started-at="2020-11-23T16:11:24 IST" finished-at="2020-11-23T16:11:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="closeReport()[pri:0, instance:oracle.assignment.test.OracleAssignment@2781e022]" name="closeReport" is-config="true" duration-ms="418" started-at="2020-11-23T16:11:25 IST" finished-at="2020-11-23T16:11:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeReport -->
+      </class> <!-- oracle.assignment.test.OracleAssignment -->
+    </test> <!-- Sample test -->
+  </suite> <!-- Sample test Suite -->
+</testng-results>

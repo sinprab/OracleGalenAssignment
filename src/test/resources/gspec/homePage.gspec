@@ -1,0 +1,175 @@
+@objects
+  # header objects
+  headerBar			    	  	id      header
+  headerLogo	    	 		xpath   //a[@class='navbar-brand']/img
+  headerText					xpath	//a[@class='navbar-brand']
+  news							xpath	//ul[@class='nav navbar-nav']//a[text()='News']
+  download						xpath	//ul[@class='nav navbar-nav']//a[text()='Download']
+  docs							xpath	//ul[@class='nav navbar-nav']//a[text()='Docs']
+  github						xpath	//ul[@class='nav navbar-nav']//a[text()='GitHub']
+  about							xpath	//ul[@class='nav navbar-nav']//a[text()='About']
+  devs							xpath	//ul[@class='nav navbar-nav']//a[text()='Devs']
+  contact						xpath	//ul[@class='nav navbar-nav']//a[text()='Contact']
+  searchPanel					id		search-panel
+  searchBox						xpath	//input[@class='form-control']
+  
+  #footer objects
+  footerBlock					id		footer
+  footerGalenText				xpath	//div[@class='col-sm-4 col-lg-4 text-center footer-socials']/h2
+  subscribeIcon					xpath	//div[@id="footer"]//i[@class="fa fa-envelope fa-2x"]
+  twitterIcon					xpath	//div[@id="footer"]//i[@class="fa fa-twitter fa-2x"]
+  githubIcon					xpath	//div[@id="footer"]//i[@class="fa fa-github-alt fa-2x"]
+  facebookIcon					xpath	//div[@id="footer"]//i[@class="fa fa-facebook-square fa-2x"]
+  siteMapLabel					xpath	//div[@id="footer"]//h3[text()="Site Map"]
+  newsLabel						xpath	//div[@id="footer"]//a[text()="News"]
+  downloadLabel					xpath	//div[@id="footer"]//a[text()="Download"]
+  docsLabel						xpath	//div[@id="footer"]//a[text()="Docs"]
+  projectLabel					xpath	//div[@id="footer"]//h3[text()="Project"]
+  aboutLabel					xpath	//div[@id="footer"]//a[text()="About"]
+  licenseLabel					xpath	//div[@id="footer"]//a[text()="License"]
+  contactLabel					xpath	//div[@id="footer"]//a[text()="Contact"]
+  gettingStartedLabel			xpath	//div[@id="footer"]//h3[text()="Getting Started"]
+  firstProjectLabel				xpath	//div[@id="footer"]//a[text()="First project"]
+  specsLanguageLabel			xpath	//div[@id="footer"]//a[text()="Specs Language"]
+  galenTutorialLabel			xpath	//div[@id="footer"]//a[text()="Galen Tutorials"]
+  copyright						id		footer-copyright
+  
+ 
+= Page: Home page =
+  @on header
+      headerLogo:
+          height 26px
+          width 260px
+          inside headerBar 8px left 
+          left-of headerText -34px
+      headerText:
+      	  height 50px
+      	  width 241px
+      	  inside headerBar
+      	  right-of headerLogo -34px
+      	  left-of news
+      news:
+      	  height 50px
+      	  width 69px
+      	  inside headerBar
+      	  right-of headerText
+      	  left-of download -1px
+      download:
+      	  height 50px
+      	  width 101px
+      	  inside headerBar
+      	  right-of news -1px
+      	  left-of docs 1px
+      docs:
+      	  height 50px
+      	  width 63px
+      	  inside headerBar
+      	  right-of download 1px
+      	  left-of github 0px
+      github:
+      	  height 50px
+      	  width 79px
+      	  inside headerBar
+      	  right-of docs 0px
+      	  left-of about 0px
+      about:
+      	  height 50px
+      	  width 73px
+      	  inside headerBar
+      	  right-of github 0px
+      	  left-of devs 0px
+      devs:
+      	  height 50px
+      	  width 64px
+      	  inside headerBar
+      	  right-of about 0px
+      	  left-of contact 0px
+      contact:
+      	  height 50px
+      	  width 84px
+      	  inside headerBar
+      	  right-of devs 0px
+      	  left-of searchPanel 338px
+      searchPanel:
+      	  height 34px
+      	  width 226px
+      	  inside headerBar 15px right
+      	  right-of contact 338px
+      searchBox:
+      	  height 34px
+      	  width 196px
+      	  inside searchPanel
+  @on footer
+   	  footerGalenText:
+   	  	  inside footerBlock 121px left
+   	  	  text is "Galen Framework"
+   	  	  above subscribeIcon
+   	  	  above twitterIcon
+   	  	  above	githubIcon
+   	  	  above facebookIcon
+   	  subscribeIcon:
+   	  	  inside footerBlock
+   	  	  below footerGalenText
+   	  	  left-of twitterIcon
+   	  twitterIcon:
+   	  	  inside footerBlock
+   	  	  below footerGalenText
+   	  	  left-of githubIcon
+   	  	  right-of subscribeIcon
+   	  githubIcon:
+   	  	  inside footerBlock
+   	  	  below footerGalenText
+   	  	  left-of facebookIcon
+   	  	  right-of twitterIcon
+   	  facebookIcon:
+   	  	  inside footerBlock
+   	  	  below footerGalenText
+   	  	  right-of githubIcon
+   	  siteMapLabel:
+   	  	  inside footerBlock
+   	  	  right-of footerGalenText
+   	  	  left-of projectLabel
+   	  	  above newsLabel
+   	  newsLabel:
+   	  	  inside footerBlock
+   	  	  below siteMapLabel
+   	  	  above downloadLabel
+   	  	  left-of aboutLabel
+   	  downloadLabel:
+   	  	  inside footerBlock
+   	  	  below newsLabel
+   	  	  above docsLabel
+   	  	  left-of licenseLabel
+   	  docsLabel:
+   	  	  inside footerBlock
+   	  	  below downloadLabel
+   	  	  left-of contactLabel
+   	  projectLabel:
+   	  	  inside footerBlock
+   	  	  right-of siteMapLabel
+   	  	  left-of gettingStartedLabel
+   	  	  above aboutLabel
+   	  aboutLabel:
+   	  	  inside footerBlock
+   	  	  below projectLabel
+   	  	  above licenseLabel
+   	  	  left-of specsLanguageLabel
+   	  	  right-of newsLabel
+   	  licenseLabel:
+   	      inside footerBlock
+   	      below aboutLabel
+   	      above contactLabel
+   	  contactLabel:
+   	  	  inside footerBlock
+   	  	  below licenseLabel
+   	  gettingStartedLabel:
+   	  	  inside footerBlock
+   	  	  right-of projectLabel
+   	  	  above firstProjectLabel
+   	  copyright:
+   	  	  inside footerBlock
+   	  	  right-of gettingStartedLabel
+   	  	  text contains "2013 - 2017"
+   	  	  text ends "Powered by Blogix"
+   	      
+   
